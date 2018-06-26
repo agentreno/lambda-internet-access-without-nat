@@ -10,8 +10,8 @@ internet access this way (no NAT, IGW only access).~~
 
 Unfortunately you can't have it both ways (a VPC but no NAT instance). Trying
 to put a Lambda into a public subnet with an IGW and no NAT doesn't work, as
-the example in `vpc_public_subnet/` proves. If you create an EC2 instance, it
-works! But not Lambda.
+the example in `vpc_public_subnet/` proves. If you create an EC2 instance in
+that public subnet, it works! But not Lambda.
 
 Here are some conditions under which you might want to put it in a VPC:
 
